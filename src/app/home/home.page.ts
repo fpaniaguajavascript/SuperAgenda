@@ -17,6 +17,6 @@ export class HomePage {
   public contacto: Contacto = { nombre: "", telefono: "" };
   constructor(public contactosService: ContactosService) { }
   agregar() {
-    this.contactosService.agregar(this.contacto);
+    this.contactosService.agregar({ nombre: this.contacto.nombre, telefono: this.contacto.telefono });
   }
 }

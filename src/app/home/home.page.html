@@ -21,13 +21,7 @@
     </ion-item>
   </ion-list>
   <ion-button (click)="agregar()">Agregar</ion-button>
-  <div id="container">
-
-
-    <ion-list *ngFor="let contacto of contactosService.contactos">
-      <app-ficha-contacto [elcontacto]=contacto></app-ficha-contacto>
-    </ion-list>
-
-
-  </div>
+  <ion-list *ngFor="let contacto of contactosService.contactos">
+    <app-ficha-contacto [elcontacto]=contacto></app-ficha-contacto>
+  </ion-list>
 </ion-content>
