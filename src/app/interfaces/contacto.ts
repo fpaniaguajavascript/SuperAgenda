@@ -1,4 +1,5 @@
 export interface Contacto {
     nombre: string,
-    telefono: string
+    telefono: string,
+    imagePath: string
 }
